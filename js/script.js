@@ -48,6 +48,11 @@ const button = document.querySelector(".button-submit");
 button.addEventListener("click", () => {
     let task = document.querySelector("#task-input");
 
+    if (task.value.trim() === "") {
+        alert("Adicione uma tarefa válida");
+        return;
+    }
+
     let containerTask = document.createElement("div");
     containerTask.classList.add("task");
 
