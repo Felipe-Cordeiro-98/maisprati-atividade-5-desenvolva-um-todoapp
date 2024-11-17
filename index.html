@@ -12,7 +12,22 @@
 </head>
 
 <body>
-
+    <header>
+        <img class="light" src="images/bg-light.svg" alt="images">
+        <img class="dark" src="images/bg-dark.svg" alt="images">
+        <div class="container-title">
+            <h1>TODO</h1>
+            <div class="theme-buttons">
+                <img class="button light" src="images/moon.svg" alt="moon">
+                <img class="button dark" src="images/sun.svg" alt="sun">
+            </div>
+        </div>
+        <div class="container-input-task d-flex">
+            <input class="form-control" type="text" id="task-input" placeholder="Adicionar uma tarefa..."
+                aria-label="Campo para adicionar uma tarefa">
+            <button class="btn bg-success text-white" type="submit">Adicionar</button>
+        </div>
+    </header>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
