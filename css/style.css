@@ -68,6 +68,7 @@ header img {
 
 .form-control {
     border: none;
+    padding: .5rem;
 }
 
 /* main */
@@ -81,7 +82,7 @@ main {
 }
 
 .container-tasks {
-    min-width: 600px;
+    width: 600px;
     border: 1px solid black;
     position: relative;
     top: -80px;
@@ -159,8 +160,7 @@ footer {
     display: none;
 }
 
-
-/* Tema Escuro */
+/* theme dark */
 .dark-theme {
     background-color: #171823;
     color: #ffffff;
@@ -189,7 +189,7 @@ footer {
     color: #ffffff;
 }
 
-/* Tema Claro */
+/* theme light */
 .light-theme {
     background-color: #ffffff;
     color: #494c6b;
@@ -211,4 +211,62 @@ footer {
 
 .light-theme .form-control {
     background-color: #ffffff;
+}
+
+/* checkbox */
+
+.checkbox.completed {
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/check.png);
+}
+
+.input-task.completed {
+    text-decoration: line-through;
+    color: #5b5e7e !important;
+}
+
+.clear-completed:active {
+    color: #0d6efd;
+}
+
+@media (max-width: 576px) {
+    .container-input-task {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .container-title {
+        width: 100%;
+        padding: 0 26px;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    .container-tasks {
+        width: 100%;
+        padding: 0;
+    }
+
+    .task {
+        padding: 10px;
+    }
+
+    .input-task {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 968px) and (orientation: landscape) {
+    .container-tasks {
+        top: -50px;
+    }
 }

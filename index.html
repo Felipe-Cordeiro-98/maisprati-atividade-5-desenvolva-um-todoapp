@@ -25,22 +25,18 @@
         <div class="container-input-task d-flex">
             <input class="form-control" type="text" id="task-input" placeholder="Adicionar uma tarefa..."
                 aria-label="Campo para adicionar uma tarefa">
-            <button class="btn bg-success text-white button-submit" type="submit">Adicionar</button>
+            <button class="btn btn-sm bg-success text-white button-submit" type="submit">Adicionar</button>
         </div>
     </header>
     <main>
         <div class="container-tasks">
-      
-           
             <div class="info-container">
-                                
-                <div>
-                    <span>All</span>
-                    <span>Active</span>
-                    <span>Completed</span>
+                <div class="filter-container">
+                    <span class="filter all" class="text-primary" onclick="filter(0)">Todos</span>
+                    <span class="filter active" onclick="filter(1)">Ativo</span>
+                    <span class="filter completed" onclick="filter(2)">Concluída</span>
                 </div>
-
-                <span>Clear Completed</span>
+                <span class="clear-completed" onclick="clearCompleted()">Limpar Concluído</span>
             </div>
         </div>
     
