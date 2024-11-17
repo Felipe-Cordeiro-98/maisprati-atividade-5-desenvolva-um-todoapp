@@ -182,6 +182,7 @@ footer {
 
 .dark-theme .form-control {
     background-color: #5b5e7e;
+    color: #ffffff;
 }
 
 .dark-theme .form-control::placeholder {
