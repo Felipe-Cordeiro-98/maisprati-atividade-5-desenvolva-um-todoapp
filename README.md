@@ -56,5 +56,6 @@ Este projeto utiliza o Bootstrap para estilizar componentes da interface, como b
 - **HTML**
 - **CSS**
 - **LocalStorage**
+- **Bootstrap**
 
 ---
