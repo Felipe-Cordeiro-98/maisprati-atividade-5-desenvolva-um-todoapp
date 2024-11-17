@@ -66,6 +66,10 @@ header img {
     transform: translate(-50%, -50%);
 }
 
+.form-control {
+    border: none;
+}
+
 /* main */
 
 main {
@@ -133,7 +137,7 @@ main {
     width: 80%;
     border: none;
     text-align: center;
-    border: 1px solid #ccc;
+    color: #494c6b;
 }
 
 /* footer */
@@ -143,14 +147,67 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     line-height: 0;
-    /* color: white; */
-    /* background-color: #333; */
+    border-top: 1px solid #ccc;
+    color: #494c6b;
 }
 
 /* geral */
 
 .dark {
     display: none;
+}
+
+
+/* Tema Escuro */
+.dark-theme {
+    background-color: #171823;
+    color: #ffffff;
+}
+
+.dark-theme .container-tasks {
+    background-color: #393a4b;
+}
+
+.dark-theme .input-task {
+    background-color: #393a4b;
+    color: #ffffff;
+}
+
+.dark-theme footer {
+    background-color: #171823;
+    color: #5b5e7e;
+}
+
+.dark-theme .form-control {
+    background-color: #5b5e7e;
+}
+
+.dark-theme .form-control::placeholder {
+    color: #ffffff;
+}
+
+/* Tema Claro */
+.light-theme {
+    background-color: #ffffff;
+    color: #494c6b;
+}
+
+.light-theme .container-tasks {
+    background-color: #ffffff;
+}
+
+.light-theme .input-task {
+    background-color: #ffffff;
+    color: #494c6b;
+}
+
+.light-theme footer {
+    background-color: #ffffff;
+    color: #494c6b;
+}
+
+.light-theme .form-control {
+    background-color: #ffffff;
 }
